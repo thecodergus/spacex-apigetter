@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\gugap\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add ts-node typescript ts-node-dev graphql-request @types/graphql-request
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Python310\Scripts\;C:\Python310\;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Falcon\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Calibre2\;C:\ProgramData\chocolatey\bin;C:\Program Files\Graphviz\bin;C:\Users\gugap\AppData\Roaming\npm;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Go\bin;C:\Program Files\PowerShell\7\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\gugap\.cargo\bin;D:\Program Files\Anaconnda;D:\Program Files\Anaconnda\Library\mingw-w64\bin;D:\Program Files\Anaconnda\Library\usr\bin;D:\Program Files\Anaconnda\Library\bin;D:\Program Files\Anaconnda\Scripts;C:\Users\gugap\AppData\Local\Microsoft\WindowsApps;C:\Program Files\FFmpeg\bin;C:\Users\gugap\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\gugap\AppData\Roaming\Composer\vendor\bin;C:\Php;C:\Users\gugap\go\bin;C:\Users\gugap\AppData\Roaming\cabal\bin;C:\tools\ghc-9.0.1\bin;C:\tools\msys64;C:\Users\gugap\AppData\Local\Programs\Julia-1.7.3\bin;C:\ghcup\bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fgraphql-request: Not found
+      at Request.params.callback [as _callback] (C:\Users\gugap\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
+      at Request.self.callback (C:\Users\gugap\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (C:\Users\gugap\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (C:\Users\gugap\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "spacex-apigetter",
+    "version": "1.0.0",
+    "description": "A SpaceX tem uma API aberta de Graphql, eu preciso que você conecte no GraphQL server deles, que está neste endereço, https://api.spacex.land/graphql/ .E gere um relatório em CSV, dos navios que estão ativa, contendo o nome do navio e a missão que ela está fazendo no momento.Os CSV pode ser apenas apresentado no terminal, sem gerar nenhum arquivo.",
+    "main": "app.ts",
+    "repository": "https://github.com/thelostgus/spacex-apigetter",
+    "author": "Gustavo Michels de Camargo",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

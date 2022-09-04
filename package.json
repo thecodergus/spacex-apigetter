@@ -1,0 +1,20 @@
+{
+  "name": "spacex-apigetter",
+  "version": "1.0.0",
+  "description": "A SpaceX tem uma API aberta de Graphql, eu preciso que você conecte no GraphQL server deles, que está neste endereço, https://api.spacex.land/graphql/ .E gere um relatório em CSV, dos navios que estão ativa, contendo o nome do navio e a missão que ela está fazendo no momento.Os CSV pode ser apenas apresentado no terminal, sem gerar nenhum arquivo.",
+  "main": "app.ts",
+  "repository": "https://github.com/thelostgus/spacex-apigetter",
+  "author": "Gustavo Michels de Camargo",
+  "license": "MIT",
+  "dependencies": {
+    "@types/graphql": "^14.5.0",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.2"
+  },
+  "scripts": {
+    "start": "ts-node ./src/app.ts"
+  }
+}
