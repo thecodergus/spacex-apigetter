@@ -4,6 +4,11 @@ export interface Ship{
     missions: Mission[]
 }
 
-interface Mission{
+export interface Mission{
     name: string
+}
+
+export interface FinalData{
+    name: string
+    missions: string
 }

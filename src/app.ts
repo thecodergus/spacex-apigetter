@@ -1,8 +1,9 @@
-import { Requests } from "./tools"
+import { Requests, writeCSV, process_data } from "./tools"
 import type { Ship } from "./types"
+import { createObjectCsvWriter } from "csv-writer"
 
 const app = async () => {
-      const query: string = `
+    const query: string = `
     {
       ships {
         name
@@ -17,7 +18,10 @@ const app = async () => {
 
   const query_result = (await Requests.requestQL(query_url, query)).ships.filter((s: Ship) => s.active)
 
-  console.log(query_result)
+  console.log(await process_data(query_result))
+
+
+
 
 
 }
