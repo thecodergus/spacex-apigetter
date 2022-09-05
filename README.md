@@ -1,4 +1,8 @@
 # spacex-apigetter
 
-- ```yarn``` or ```npm install```
-- ```yarn start``` or ```npm run start```
+## Tutorial:
+
+- <ol>
+  <li>```yarn``` or ```npm install```</li>
+  <li>```yarn start``` or ```npm run start```</li>
+</ol>
