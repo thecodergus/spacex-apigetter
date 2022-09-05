@@ -9,7 +9,7 @@ const process_ship = async (data: Ship): Promise<FinalData> => {
     }
 }
 
-const process_data = async (data: [Ship]): Promise<FinalData[]> => await Promise.all(data.map(process_ship))
+const process_data = async (data: any): Promise<FinalData[]> => await Promise.all(data.ships.filter((s: Ship) => s.active).map(process_ship))
 
 export {
     process_data,

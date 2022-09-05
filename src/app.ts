@@ -16,7 +16,7 @@ const app = async () => {
   `
   const query_url: string = "https://api.spacex.land/graphql/"
 
-  const query_result = (await Requests.requestQL(query_url, query)).ships.filter((s: Ship) => s.active)
+  const query_result = await Requests.requestQL(query_url, query)
 
   console.log(await process_data(query_result))
 
