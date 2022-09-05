@@ -2,7 +2,7 @@ import type { Mission, Ship, FinalData } from "../types"
 
 const process_mission = async (data: Mission[]): Promise<string> => (await data.map((m: Mission) => m.name)).join(",")
 
-const process_ship = async (data: Ship): Promise<FinalData> => ({
+const process_ship = async (data: Ship): Promise<FinalData> => await ({
     ship_name: data.name,
     missions: await process_mission(data.missions)
 })
