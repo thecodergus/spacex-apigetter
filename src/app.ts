@@ -1,6 +1,4 @@
 import { Requests, writeCSV, process_data } from "./tools"
-import type { Ship } from "./types"
-import { createObjectCsvWriter } from "csv-writer"
 
 const app = async () => {
     const query: string = `
@@ -17,12 +15,8 @@ const app = async () => {
   const query_url: string = "https://api.spacex.land/graphql/"
 
   const query_result = await Requests.requestQL(query_url, query)
-
-  console.log(await process_data(query_result))
-
-
-
-
+ 
+  writeCSV(await process_data(query_result))
 
 }
 

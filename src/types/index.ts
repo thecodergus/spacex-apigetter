@@ -9,6 +9,6 @@ export interface Mission{
 }
 
 export interface FinalData{
-    name: string
+    ship_name: string
     missions: string
 }

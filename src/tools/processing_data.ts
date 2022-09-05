@@ -4,7 +4,7 @@ const process_mission = async (data: Mission[]): Promise<string> => (await data.
 
 const process_ship = async (data: Ship): Promise<FinalData> => {
     return {
-        name: data.name,
+        ship_name: data.name,
         missions: await process_mission(data.missions)
     }
 }
